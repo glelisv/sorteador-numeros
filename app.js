@@ -3,6 +3,10 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
 
+    if (de > ate) {
+        alert('Reveja se você inseriu os dados corretamente.');
+    }
+
     let sorteados =  [];
     let numero;
     for(let i = 0; i < quantidade; i++) {
